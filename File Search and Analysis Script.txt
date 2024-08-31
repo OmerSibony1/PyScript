@@ -1,0 +1,42 @@
+
+Usage:
+
+sh: 
+run the script:
+- python search_script.py
+ Provide Inputs:
+- Enter the text to search for.
+- Specify the directory path.
+- Choose whether to search only in the current directory or include subdirectories.
+
+
+Script Functions:
+- getFilesDirYSubdir(path): Recursively collects all files from the given directory and subdirectories.
+- getFilesFromDirectory(path): Lists files in the specified directory.
+- search_text_in_binary_file(filename, text): Searches for text in binary files.
+- search_text_in_file_line_by_line(filename, text): Searches line by line in text files.
+- read_json_file(filename, text): Searches for text in JSON files.
+- read_pdf_file(filename, text): Searches for text in PDF files.
+- read_diff_decode(filename, text): Attempts various encodings to read files and search for text.
+- find_text_in_directory(files, dirname, text): Searches for text in a list of files.
+- search_current_directoty(path, text): Searches in the specified directory.
+- search_in_subdirectories(path, text): Searches in the directory and its subdirectories.
+
+
+Logging:
+- files_with_text_content.txt: Logs files containing the specified text.
+- decodeFiles.txt: Logs files successfully decoded with a specific encoding.
+- excexptionDecodeFile.txt: Logs files that could not be decoded with any encoding.
+
+
+Notes:
+- Ensure you have the necessary permissions to access and read the files in the directory.
+- The script may take some time to process large files or a high volume of files.
+
+
+Contributing:
+Suggestions and improvements are welcome. Please open an issue or submit a pull request.
+
+
+
+
